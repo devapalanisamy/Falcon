@@ -19,6 +19,11 @@
 		D73A5CAF1A390E63000733B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73A5C971A390E62000733B2 /* UIKit.framework */; };
 		D73A5CB71A390E63000733B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D73A5CB51A390E63000733B2 /* InfoPlist.strings */; };
 		D73A5CB91A390E63000733B2 /* FalconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A5CB81A390E63000733B2 /* FalconTests.m */; };
+		D73A5CCA1A3913F7000733B2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A5CC91A3913F7000733B2 /* HomeViewController.m */; };
+		D74A62D71A3A2C9700C4384F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62D61A3A2C9700C4384F /* SettingsViewController.m */; };
+		D74A62DA1A3A2D1300C4384F /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62D91A3A2D1300C4384F /* BooksViewController.m */; };
+		D74A62DD1A3A2D8400C4384F /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DC1A3A2D8400C4384F /* VideosViewController.m */; };
+		D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,16 @@
 		D73A5CB41A390E63000733B2 /* FalconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FalconTests-Info.plist"; sourceTree = "<group>"; };
 		D73A5CB61A390E63000733B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D73A5CB81A390E63000733B2 /* FalconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FalconTests.m; sourceTree = "<group>"; };
+		D73A5CC81A3913F7000733B2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
+		D73A5CC91A3913F7000733B2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
+		D74A62D51A3A2C9700C4384F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ViewControllers/SettingsViewController.h; sourceTree = "<group>"; };
+		D74A62D61A3A2C9700C4384F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
+		D74A62D81A3A2D1300C4384F /* BooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BooksViewController.h; path = ViewControllers/BooksViewController.h; sourceTree = "<group>"; };
+		D74A62D91A3A2D1300C4384F /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BooksViewController.m; path = ViewControllers/BooksViewController.m; sourceTree = "<group>"; };
+		D74A62DB1A3A2D8400C4384F /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideosViewController.h; path = ViewControllers/VideosViewController.h; sourceTree = "<group>"; };
+		D74A62DC1A3A2D8400C4384F /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideosViewController.m; path = ViewControllers/VideosViewController.m; sourceTree = "<group>"; };
+		D74A62DE1A3A2DE600C4384F /* MagazinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagazinesViewController.h; path = ViewControllers/MagazinesViewController.h; sourceTree = "<group>"; };
+		D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazinesViewController.m; path = ViewControllers/MagazinesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +122,10 @@
 		D73A5C991A390E62000733B2 /* Falcon */ = {
 			isa = PBXGroup;
 			children = (
-				D73A5CA21A390E62000733B2 /* AppDelegate.h */,
-				D73A5CA31A390E62000733B2 /* AppDelegate.m */,
+				D73A5CC71A391389000733B2 /* Resources */,
+				D73A5CC61A391357000733B2 /* CustomViews */,
+				D73A5CC51A391322000733B2 /* ViewControllers */,
+				D73A5CC31A3912D9000733B2 /* Delegate */,
 				D73A5CA51A390E62000733B2 /* Images.xcassets */,
 				D73A5C9A1A390E62000733B2 /* Supporting Files */,
 			);
@@ -142,6 +159,46 @@
 				D73A5CB51A390E63000733B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D73A5CC31A3912D9000733B2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D73A5CA21A390E62000733B2 /* AppDelegate.h */,
+				D73A5CA31A390E62000733B2 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		D73A5CC51A391322000733B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D73A5CC81A3913F7000733B2 /* HomeViewController.h */,
+				D73A5CC91A3913F7000733B2 /* HomeViewController.m */,
+				D74A62D81A3A2D1300C4384F /* BooksViewController.h */,
+				D74A62D91A3A2D1300C4384F /* BooksViewController.m */,
+				D74A62DE1A3A2DE600C4384F /* MagazinesViewController.h */,
+				D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */,
+				D74A62DB1A3A2D8400C4384F /* VideosViewController.h */,
+				D74A62DC1A3A2D8400C4384F /* VideosViewController.m */,
+				D74A62D51A3A2C9700C4384F /* SettingsViewController.h */,
+				D74A62D61A3A2C9700C4384F /* SettingsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D73A5CC61A391357000733B2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		D73A5CC71A391389000733B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74A62DD1A3A2D8400C4384F /* VideosViewController.m in Sources */,
 				D73A5CA41A390E62000733B2 /* AppDelegate.m in Sources */,
+				D74A62DA1A3A2D1300C4384F /* BooksViewController.m in Sources */,
 				D73A5CA01A390E62000733B2 /* main.m in Sources */,
+				D73A5CCA1A3913F7000733B2 /* HomeViewController.m in Sources */,
+				D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */,
+				D74A62D71A3A2C9700C4384F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +501,7 @@
 				D73A5CBE1A390E63000733B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D73A5CBF1A390E63000733B2 /* Build configuration list for PBXNativeTarget "FalconTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +510,7 @@
 				D73A5CC11A390E63000733B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
