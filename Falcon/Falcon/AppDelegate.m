@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TabControllerHelper.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self setTabBarController];
+    self.window.rootViewController = self.tabBarController;
     return YES;
 }
 
@@ -41,6 +44,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 
+}
+
+- (void)setTabBarController
+{
+    self.tabBarController = [[UITabBarController alloc]init];
+    self.tabBarController.viewControllers = [[TabControllerHelper sharedInstance]getViewControllers];
+    self.tabBarController.selectedIndex = 0;
 }
 
 @end
