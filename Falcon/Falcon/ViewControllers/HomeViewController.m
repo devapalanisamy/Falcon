@@ -19,7 +19,8 @@
     self = [super init];
     if (self)
     {
-        self.title = @"Home";
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Home" image:[UIImage imageNamed:@"home"] tag:0];
+        [self setTabBarItem:barItem];
     }
     return self;
 }

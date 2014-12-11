@@ -19,7 +19,8 @@
     self = [super init];
     if (self)
     {
-        self.title = @"Books";
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Books" image:[UIImage imageNamed:@"books"] tag:0];
+        [self setTabBarItem:barItem];
     }
     return self;
 }
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 @end

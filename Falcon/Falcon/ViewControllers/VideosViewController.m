@@ -17,8 +17,10 @@
 - (instancetype)init
 {
     self = [super init];
-    if (self) {
-        self.title = @"Videos";
+    if (self)
+    {
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Videos" image:[UIImage imageNamed:@"videos"] tag:0];
+        [self setTabBarItem:barItem];
     }
     return self;
 }
@@ -26,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 

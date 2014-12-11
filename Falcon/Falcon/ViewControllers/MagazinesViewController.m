@@ -19,7 +19,8 @@
     self = [super init];
     if (self)
     {
-        self.title = @"Magazines";
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Magazines" image:[UIImage imageNamed:@"magazines"] tag:0];
+        [self setTabBarItem:barItem];
     }
     return self;
 }
@@ -28,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor purpleColor];
 }
 
 
