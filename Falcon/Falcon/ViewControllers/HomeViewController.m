@@ -58,13 +58,14 @@
      }
 
     cell.textLabel.text = [countries objectAtIndex:indexPath.row];
-
+    cell.textLabel.font=[UIFont fontWithName:@"GillSans" size:25];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CountryViewController *countryViewController = [[CountryViewController alloc]init];
+    countryViewController.label.text = [countries objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:countryViewController animated:YES];
 }
 

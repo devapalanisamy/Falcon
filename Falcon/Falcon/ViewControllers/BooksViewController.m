@@ -29,6 +29,12 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    UILabel *label = [[UILabel alloc]init];
+    label.text = @"Books";
+    [label sizeToFit];
+    label.center = self.view.center;
+    label.font=[UIFont fontWithName:@"GillSans" size:15];
+    [self.view addSubview:label];
 }
 
 @end

@@ -17,6 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self setTabBarController];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"GillSans" size:10.0f], NSFontAttributeName, nil] forState:UIControlStateNormal];
     self.tabBarController.tabBar.frame = CGRectMake(0, 20, self.window.bounds.size.width, 50);
     self.navigationController = [[UINavigationController alloc]initWithRootViewController:self.tabBarController];
     self.navigationController.navigationBar.hidden = YES;

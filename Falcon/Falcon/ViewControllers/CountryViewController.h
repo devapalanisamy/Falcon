@@ -10,4 +10,5 @@
 
 @interface CountryViewController : UIViewController
 
+@property (strong, nonatomic) UILabel *label;
 @end
