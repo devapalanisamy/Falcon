@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    NSArray *countries;
+    UITableView *tableview;
+}
 
 @end

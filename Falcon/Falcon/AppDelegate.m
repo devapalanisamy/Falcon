@@ -17,7 +17,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self setTabBarController];
-    self.window.rootViewController = self.tabBarController;
+    self.tabBarController.tabBar.frame = CGRectMake(0, 20, self.window.bounds.size.width, 50);
+    self.navigationController = [[UINavigationController alloc]initWithRootViewController:self.tabBarController];
+    self.navigationController.navigationBar.hidden = YES;
+    self.window.rootViewController = self.navigationController;
     return YES;
 }
 

@@ -25,6 +25,7 @@
 		D74A62DD1A3A2D8400C4384F /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DC1A3A2D8400C4384F /* VideosViewController.m */; };
 		D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */; };
 		D74A62E41A3A358B00C4384F /* TabControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62E31A3A358B00C4384F /* TabControllerHelper.m */; };
+		D74A62E71A3A51EE00C4384F /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62E61A3A51EE00C4384F /* CountryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazinesViewController.m; path = ViewControllers/MagazinesViewController.m; sourceTree = "<group>"; };
 		D74A62E21A3A358B00C4384F /* TabControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabControllerHelper.h; path = Helpers/TabControllerHelper.h; sourceTree = "<group>"; };
 		D74A62E31A3A358B00C4384F /* TabControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabControllerHelper.m; path = Helpers/TabControllerHelper.m; sourceTree = "<group>"; };
+		D74A62E51A3A51EE00C4384F /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryViewController.h; path = ViewControllers/CountryViewController.h; sourceTree = "<group>"; };
+		D74A62E61A3A51EE00C4384F /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryViewController.m; path = ViewControllers/CountryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				D74A62DC1A3A2D8400C4384F /* VideosViewController.m */,
 				D74A62D51A3A2C9700C4384F /* SettingsViewController.h */,
 				D74A62D61A3A2C9700C4384F /* SettingsViewController.m */,
+				D74A62E51A3A51EE00C4384F /* CountryViewController.h */,
+				D74A62E61A3A51EE00C4384F /* CountryViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				D73A5CCA1A3913F7000733B2 /* HomeViewController.m in Sources */,
 				D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */,
 				D74A62D71A3A2C9700C4384F /* SettingsViewController.m in Sources */,
+				D74A62E71A3A51EE00C4384F /* CountryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
