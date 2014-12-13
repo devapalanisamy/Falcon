@@ -36,7 +36,7 @@
     [label sizeToFit];
     label.center = self.view.center;
     label.font=[UIFont fontWithName:@"GillSans" size:15];
-    view.backgroundColor = [UIColor grayColor];
+    view.backgroundColor = [UIColor redColor];
     [view addSubview:label];
     [self.view addSubview:view];
 }
