@@ -19,7 +19,7 @@
     self = [super init];
     if (self)
     {
-        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Settings" image:[UIImage imageNamed:@"settings"] tag:0];
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"settings"] tag:0];
         [self setTabBarItem:barItem];
     }
     return self;

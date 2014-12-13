@@ -22,7 +22,7 @@
     self = [super init];
     if (self)
     {
-        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Home" image:[UIImage imageNamed:@"home"] tag:0];
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"home"] tag:0];
         [self setTabBarItem:barItem];
     }
     return self;
@@ -73,6 +73,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     TaskDetailViewController *countryViewController = [[TaskDetailViewController alloc]init];
     NSDictionary *dictionary = [taskList objectAtIndex:indexPath.row];
     countryViewController.label.text = [NSString stringWithFormat:@"You have selected : %@ ",[[dictionary valueForKey:@"data"]valueForKey:@"title"]];

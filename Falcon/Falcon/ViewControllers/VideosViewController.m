@@ -19,7 +19,7 @@
     self = [super init];
     if (self)
     {
-        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"Videos" image:[UIImage imageNamed:@"videos"] tag:0];
+        UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"videos"] tag:0];
         [self setTabBarItem:barItem];
     }
     return self;
