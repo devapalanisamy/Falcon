@@ -7,7 +7,9 @@
 //
 
 #import "HomeViewController.h"
-#import "CountryViewController.h"
+#import "TaskDetailViewController.h"
+#import "FalconJsonParser.h"
+#import "CustomTableViewCell.h"
 
 @interface HomeViewController ()
 
@@ -38,39 +40,47 @@
     tableview.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:tableview];
     self.navigationController.navigationBar.hidden = YES;
+    [tableview registerNib:[UINib nibWithNibName:@"CustomTableViewCell" bundle:nil ] forCellReuseIdentifier:@"MyIdentifier"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return countries.count;
+    return taskList.count;
 }
 
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CustomTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
 
      if (cell == nil)
      {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
+         cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
          cell.selectionStyle = UITableViewCellSelectionStyleNone;
      }
 
-    cell.textLabel.text = [countries objectAtIndex:indexPath.row];
-    cell.textLabel.font=[UIFont fontWithName:@"GillSans" size:25];
+    NSDictionary *dictionary = [taskList objectAtIndex:indexPath.row];
+    cell.title.text = [[dictionary valueForKey:@"data"]valueForKey:@"title"];
+    cell.status.text = [[dictionary valueForKey:@"data"]valueForKey:@"status"];
+    cell.location.text = [[dictionary valueForKey:@"data"]valueForKey:@"location"];
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 93;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CountryViewController *countryViewController = [[CountryViewController alloc]init];
-    countryViewController.label.text = [countries objectAtIndex:indexPath.row];
+    TaskDetailViewController *countryViewController = [[TaskDetailViewController alloc]init];
+    NSDictionary *dictionary = [taskList objectAtIndex:indexPath.row];
+    countryViewController.label.text = [NSString stringWithFormat:@"You have selected : %@ ",[[dictionary valueForKey:@"data"]valueForKey:@"title"]];
     [self.navigationController pushViewController:countryViewController animated:YES];
 }
 
 - (void)setTableData
 {
-    countries = [NSArray arrayWithObjects:@"United Kingdom",@"France",@"Germany",@"Spain",@"Japan",@"China",@"India",@"United Kingdom",@"France",@"Germany",@"Spain", nil];
+    taskList = [FalconJsonParser getJsonArray:[FalconJsonParser getJsonData]];
 }
 @end

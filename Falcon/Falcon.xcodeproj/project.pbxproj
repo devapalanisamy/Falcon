@@ -20,12 +20,16 @@
 		D73A5CB71A390E63000733B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D73A5CB51A390E63000733B2 /* InfoPlist.strings */; };
 		D73A5CB91A390E63000733B2 /* FalconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A5CB81A390E63000733B2 /* FalconTests.m */; };
 		D73A5CCA1A3913F7000733B2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A5CC91A3913F7000733B2 /* HomeViewController.m */; };
+		D73C31001A3B9162002FA9F0 /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = D73C30FF1A3B9162002FA9F0 /* Information.json */; };
+		D73C31031A3BA21D002FA9F0 /* FalconJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C31021A3BA21D002FA9F0 /* FalconJsonParser.m */; };
+		D73C31071A3BB211002FA9F0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C31051A3BB211002FA9F0 /* CustomTableViewCell.m */; };
+		D73C31081A3BB211002FA9F0 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73C31061A3BB211002FA9F0 /* CustomTableViewCell.xib */; };
 		D74A62D71A3A2C9700C4384F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62D61A3A2C9700C4384F /* SettingsViewController.m */; };
 		D74A62DA1A3A2D1300C4384F /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62D91A3A2D1300C4384F /* BooksViewController.m */; };
 		D74A62DD1A3A2D8400C4384F /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DC1A3A2D8400C4384F /* VideosViewController.m */; };
 		D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */; };
 		D74A62E41A3A358B00C4384F /* TabControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62E31A3A358B00C4384F /* TabControllerHelper.m */; };
-		D74A62E71A3A51EE00C4384F /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62E61A3A51EE00C4384F /* CountryViewController.m */; };
+		D74A62E71A3A51EE00C4384F /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74A62E61A3A51EE00C4384F /* TaskDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,12 @@
 		D73A5CB81A390E63000733B2 /* FalconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FalconTests.m; sourceTree = "<group>"; };
 		D73A5CC81A3913F7000733B2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
 		D73A5CC91A3913F7000733B2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
+		D73C30FF1A3B9162002FA9F0 /* Information.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Information.json; path = Resources/Information.json; sourceTree = "<group>"; };
+		D73C31011A3BA21D002FA9F0 /* FalconJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FalconJsonParser.h; path = Helpers/FalconJsonParser.h; sourceTree = "<group>"; };
+		D73C31021A3BA21D002FA9F0 /* FalconJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FalconJsonParser.m; path = Helpers/FalconJsonParser.m; sourceTree = "<group>"; };
+		D73C31041A3BB211002FA9F0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = CustomViews/CustomTableViewCell.h; sourceTree = "<group>"; };
+		D73C31051A3BB211002FA9F0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = CustomViews/CustomTableViewCell.m; sourceTree = "<group>"; };
+		D73C31061A3BB211002FA9F0 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomTableViewCell.xib; path = CustomViews/CustomTableViewCell.xib; sourceTree = "<group>"; };
 		D74A62D51A3A2C9700C4384F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ViewControllers/SettingsViewController.h; sourceTree = "<group>"; };
 		D74A62D61A3A2C9700C4384F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
 		D74A62D81A3A2D1300C4384F /* BooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BooksViewController.h; path = ViewControllers/BooksViewController.h; sourceTree = "<group>"; };
@@ -67,8 +77,8 @@
 		D74A62DF1A3A2DE600C4384F /* MagazinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazinesViewController.m; path = ViewControllers/MagazinesViewController.m; sourceTree = "<group>"; };
 		D74A62E21A3A358B00C4384F /* TabControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabControllerHelper.h; path = Helpers/TabControllerHelper.h; sourceTree = "<group>"; };
 		D74A62E31A3A358B00C4384F /* TabControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabControllerHelper.m; path = Helpers/TabControllerHelper.m; sourceTree = "<group>"; };
-		D74A62E51A3A51EE00C4384F /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryViewController.h; path = ViewControllers/CountryViewController.h; sourceTree = "<group>"; };
-		D74A62E61A3A51EE00C4384F /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryViewController.m; path = ViewControllers/CountryViewController.m; sourceTree = "<group>"; };
+		D74A62E51A3A51EE00C4384F /* TaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskDetailViewController.h; path = ViewControllers/TaskDetailViewController.h; sourceTree = "<group>"; };
+		D74A62E61A3A51EE00C4384F /* TaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskDetailViewController.m; path = ViewControllers/TaskDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +200,8 @@
 				D74A62DC1A3A2D8400C4384F /* VideosViewController.m */,
 				D74A62D51A3A2C9700C4384F /* SettingsViewController.h */,
 				D74A62D61A3A2C9700C4384F /* SettingsViewController.m */,
-				D74A62E51A3A51EE00C4384F /* CountryViewController.h */,
-				D74A62E61A3A51EE00C4384F /* CountryViewController.m */,
+				D74A62E51A3A51EE00C4384F /* TaskDetailViewController.h */,
+				D74A62E61A3A51EE00C4384F /* TaskDetailViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +209,9 @@
 		D73A5CC61A391357000733B2 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D73C31041A3BB211002FA9F0 /* CustomTableViewCell.h */,
+				D73C31051A3BB211002FA9F0 /* CustomTableViewCell.m */,
+				D73C31061A3BB211002FA9F0 /* CustomTableViewCell.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 		D73A5CC71A391389000733B2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D73C30FF1A3B9162002FA9F0 /* Information.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -215,6 +229,8 @@
 			children = (
 				D74A62E21A3A358B00C4384F /* TabControllerHelper.h */,
 				D74A62E31A3A358B00C4384F /* TabControllerHelper.m */,
+				D73C31011A3BA21D002FA9F0 /* FalconJsonParser.h */,
+				D73C31021A3BA21D002FA9F0 /* FalconJsonParser.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -296,6 +312,8 @@
 			files = (
 				D73A5C9E1A390E62000733B2 /* InfoPlist.strings in Resources */,
 				D73A5CA61A390E62000733B2 /* Images.xcassets in Resources */,
+				D73C31081A3BB211002FA9F0 /* CustomTableViewCell.xib in Resources */,
+				D73C31001A3B9162002FA9F0 /* Information.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +337,12 @@
 				D74A62DA1A3A2D1300C4384F /* BooksViewController.m in Sources */,
 				D74A62E41A3A358B00C4384F /* TabControllerHelper.m in Sources */,
 				D73A5CA01A390E62000733B2 /* main.m in Sources */,
+				D73C31071A3BB211002FA9F0 /* CustomTableViewCell.m in Sources */,
 				D73A5CCA1A3913F7000733B2 /* HomeViewController.m in Sources */,
 				D74A62E01A3A2DE600C4384F /* MagazinesViewController.m in Sources */,
+				D73C31031A3BA21D002FA9F0 /* FalconJsonParser.m in Sources */,
 				D74A62D71A3A2C9700C4384F /* SettingsViewController.m in Sources */,
-				D74A62E71A3A51EE00C4384F /* CountryViewController.m in Sources */,
+				D74A62E71A3A51EE00C4384F /* TaskDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

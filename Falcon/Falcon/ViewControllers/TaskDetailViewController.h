@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CountryViewController : UIViewController
+@interface TaskDetailViewController : UIViewController
 
 @property (strong, nonatomic) UILabel *label;
 @end

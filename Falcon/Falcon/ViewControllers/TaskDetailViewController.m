@@ -6,20 +6,20 @@
 //  Copyright (c) 2014 Sales-i. All rights reserved.
 //
 
-#import "CountryViewController.h"
+#import "TaskDetailViewController.h"
 
-@interface CountryViewController ()
+@interface TaskDetailViewController ()
 
 @end
 
-@implementation CountryViewController
+@implementation TaskDetailViewController
 
 - (instancetype)init
 {
     self = [super init];
     if (self)
     {
-        self.title = @"Country";
+        self.title = @"Task Detail";
         self.label = [[UILabel alloc]init];
     }
     return self;

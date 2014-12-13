@@ -10,7 +10,7 @@
 
 @interface HomeViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 {
-    NSArray *countries;
+    NSArray *taskList;
     UITableView *tableview;
 }
 

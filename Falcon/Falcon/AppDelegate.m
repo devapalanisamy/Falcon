@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabControllerHelper.h"
+#import "FalconJsonParser.h"
 
 @implementation AppDelegate
 
