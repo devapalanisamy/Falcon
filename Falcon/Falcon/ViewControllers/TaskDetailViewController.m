@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.251 green:0.6 blue:1 alpha:1];
     self.navigationController.navigationBar.hidden = NO;
 
     [self.label sizeToFit];
