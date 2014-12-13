@@ -28,13 +28,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor cyanColor];
+    UIView *view = [[UIView alloc]init];
+    view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+50, self.view.bounds.size.width, self.view.bounds.size.height-50);
     UILabel *label = [[UILabel alloc]init];
     label.text = @"Videos";
     [label sizeToFit];
     label.center = self.view.center;
     label.font=[UIFont fontWithName:@"GillSans" size:15];
-    [self.view addSubview:label];
+    view.backgroundColor = [UIColor grayColor];
+    [view addSubview:label];
+    [self.view addSubview:view];
 }
 
 

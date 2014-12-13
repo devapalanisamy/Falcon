@@ -11,6 +11,8 @@
 #import "FalconJsonParser.h"
 #import "CustomTableViewCell.h"
 
+#define CELL_HEIGHT 93
+
 @interface HomeViewController ()
 
 @end
@@ -32,15 +34,20 @@
 {
     [super viewDidLoad];
     [self setTableData];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor cyanColor];
     tableview = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    tableview.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+50, self.view.bounds.size.width, self.view.bounds.size.height-70);
+    tableview.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+50, self.view.bounds.size.width, self.view.bounds.size.height-50);
     tableview.dataSource = self;
     tableview.delegate = self;
     tableview.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:tableview];
     self.navigationController.navigationBar.hidden = YES;
     [tableview registerNib:[UINib nibWithNibName:@"CustomTableViewCell" bundle:nil ] forCellReuseIdentifier:@"MyIdentifier"];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.view.backgroundColor = [UIColor cyanColor];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -53,13 +60,11 @@
 - (CustomTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
-
      if (cell == nil)
      {
          cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
          cell.selectionStyle = UITableViewCellSelectionStyleNone;
      }
-
     NSDictionary *dictionary = [taskList objectAtIndex:indexPath.row];
     cell.title.text = [[dictionary valueForKey:@"data"]valueForKey:@"title"];
     cell.status.text = [[dictionary valueForKey:@"data"]valueForKey:@"status"];
@@ -68,7 +73,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 93;
+    return CELL_HEIGHT;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
